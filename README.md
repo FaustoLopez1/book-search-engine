@@ -32,7 +32,7 @@ Open http://localhost:3000 to view it in the browser. The page will reload if yo
   <a href="LINK_TO_REPO">
 <img src= https://media.giphy.com/media/39lZ7ZpdvDUYRXLfih/giphy.gif alt="logo">
 
-- https://www.youtube.com/watch?v=3QTrcl1JO7w
+    
 - https://faustolopez1.github.io/my-react-portfolio/
 - https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas
 
