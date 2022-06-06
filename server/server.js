@@ -4,6 +4,7 @@ const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const { ApolloServerPluginDrainHttpServer } = require("apollo-server-core");
 const { resolvers, typeDefs } = require("./schema");
+const { authMiddleware } = require("./utils/auth2");
 
 const db = require("./config/connection");
 const routes = require("./routes");
@@ -26,6 +27,7 @@ async function startApolloServer() {
   const server = new ApolloServer({
     typeDefs,
     resolvers,
+    context: authMiddleware,
     // csrfPrevention: true,
     plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
   });
